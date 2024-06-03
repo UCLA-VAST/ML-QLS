@@ -1,0 +1,3 @@
+gate num: 1300077
+slurmstepd-c01: error: Detected 1 oom-kill event(s) in StepId=14598.0. Some of your processes may have been killed by the cgroup out-of-memory handler.
+srun: error: c01: task 0: Out Of Memory

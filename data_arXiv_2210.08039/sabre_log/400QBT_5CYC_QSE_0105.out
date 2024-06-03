@@ -1,0 +1,8 @@
+srun: job 24884 queued and waiting for resources
+srun: job 24884 has been allocated resources
+gate num: 700
+2Q gate num: 500
+1Q gate num: 200
+Time:  0.3878473318181932
+count_swap:  740
+depth: 50

@@ -1,0 +1,9 @@
+===============================================
+====      Stage 0: Heuristic Algorithm     ====
+===============================================
+srun: forcing job termination
+srun: forcing job termination
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: got SIGCONT
+slurmstepd-c01: error: *** STEP 25469.0 ON c01 CANCELLED AT 2024-04-17T09:04:33 ***
+srun: error: c01: task 0: Killed

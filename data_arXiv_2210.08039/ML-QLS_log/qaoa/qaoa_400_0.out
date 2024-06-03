@@ -1,0 +1,9 @@
+srun: job 21400 queued and waiting for resources
+srun: job 21400 has been allocated resources
+===============================================
+====      Stage 0: Heuristic Algorithm     ====
+===============================================
+[INFO] get a solution with 1463 SWAP and depth 103[INFO] get a solution for reverse circuit with 1605 SWAP and depth 90[INFO] get a solution with 1523 SWAP and depth 93[INFO] get a solution for reverse circuit with 1591 SWAP and depth 91[INFO] Update circuit by forwardCir with 1463 SWAP and depth 103[INFO] get a solution with 1527 SWAP and depth 106[INFO] get a solution for reverse circuit with 1644 SWAP and depth 95[INFO] get a solution with 1603 SWAP and depth 86[INFO] get a solution for reverse circuit with 1551 SWAP and depth 89[INFO] Update circuit by forwardCir with 1527 SWAP and depth 106[INFO] get a solution with 1565 SWAP and depth 101[INFO] get a solution for reverse circuit with 1758 SWAP and depth 110[INFO] get a solution with 1676 SWAP and depth 100[INFO] get a solution for reverse circuit with 1660 SWAP and depth 98[INFO] Update circuit by forwardCir with 1565 SWAP and depth 101[INFO] get a solution with 1509 SWAP and depth 89[INFO] get a solution for reverse circuit with 1612 SWsrun: Force Terminated job 21400
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd-c01: error: *** STEP 21400.0 ON c01 CANCELLED AT 2024-04-07T01:40:04 DUE TO TIME LIMIT ***
+AP and depth 110[INFO] get a solution with 1597 SWAP and depth 98[INFO] get a solution for reverse circuit with 1555 SWAP and depth 101[INFO] Update circuit by forwardCir with 1509 SWAP and depth 89[INFO] get a solution with 1574 SWAP and depth 117[INFO] get a solution for reverse circuit with 1786 SWAP and depth 114srun: error: c01: task 0: Terminated

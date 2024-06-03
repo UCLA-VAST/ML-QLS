@@ -1,0 +1,7 @@
+gate num: 169580
+srun: interrupt (one more within 1 sec to abort)
+srun: StepId=14586.0 task 0: running
+srun: sending Ctrl-C to StepId=14586.0
+srun: forcing job termination
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd-c01: error: *** STEP 14586.0 ON c01 CANCELLED AT 2024-03-05T10:13:09 ***

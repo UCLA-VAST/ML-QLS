@@ -1,0 +1,9 @@
+srun: job 25888 queued and waiting for resources
+srun: job 25888 has been allocated resources
+===============================================
+====      Stage 0: Heuristic Algorithm     ====
+===============================================
+srun: Force Terminated job 25888
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd-c01: error: *** STEP 25888.0 ON c01 CANCELLED AT 2024-04-18T07:47:17 DUE TO TIME LIMIT ***
+[INFO] get a solution with 6038 SWAP and depth 671[INFO] get a solution for reverse circuit with 5441 SWAP and depth 495[INFO] get a solution with 5119 SWAP and depth 450[INFO] get a solution for reverse circuit with 4837 SWAP and depth 423[INFO] get a solution with 4490 SWAP and depth 430[INFO] get a solution for reverse circuit with 4217 SWAP and depth 305[INFO] get a solution with 3921 SWAP and depth 384[INFO] get a solution for reverse circuit with 3810 SWAP and depth 277[INFO] get a solution with 3726 SWAP and depth 336[INFO] get a solution for reverse circuit with 3595 SWAP and depth 273[INFO] get a solution with 3633 SWAP and depth 267[INFO] get a solution for reverse circuit with 3461 SWAP and depth 247[INFO] get a solution with 3494 SWAP and depth 260[INFO] get a solution for reverse circuit with 3176 SWAP and depth 231[INFO] get a solution with 3178 SWAP and depth 280[INFO] get a solution for reverse circuit with 3107 SWAP and depth 282srun: error: c01: task 0: Terminated

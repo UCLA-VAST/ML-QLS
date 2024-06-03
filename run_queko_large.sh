@@ -1,0 +1,19 @@
+# srun --mem=50G python3 -u run_mlqls.py --dt grid --d 15 --qf ../QUEKO-benchmark/large/225QBT_5CYC_0105.qasm &> molsq_log/225QBT_5CYC_QSE_0105.out
+# srun --mem=50G python3 -u run_mlqls.py --dt grid --d 15 --qf ../QUEKO-benchmark/large/225QBT_10CYC_0105.qasm &> molsq_log/225QBT_10CYC_QSE_0105.out
+# srun --mem=50G python3 -u run_mlqls.py --dt grid --d 15 --qf ../QUEKO-benchmark/large/225QBT_15CYC_0105.qasm &> molsq_log/225QBT_15CYC_QSE_0105.out
+# srun --mem=50G python3 -u run_mlqls.py --dt grid --d 15 --qf ../QUEKO-benchmark/large/225QBT_20CYC_0105.qasm &> molsq_log/225QBT_20CYC_QSE_0105.out
+# srun --mem=50G python3 -u run_mlqls.py --dt grid --d 15 --qf ../QUEKO-benchmark/large/225QBT_25CYC_0105.qasm &> molsq_log/225QBT_25CYC_QSE_0105.out
+# srun --mem=50G python3 -u run_mlqls.py --dt grid --d 15 --qf ../QUEKO-benchmark/large/225QBT_30CYC_0105.qasm &> molsq_log/225QBT_30CYC_QSE_0105.out
+# srun --mem=50G python3 -u run_mlqls.py --dt grid --d 15 --qf ../QUEKO-benchmark/large/225QBT_35CYC_0105.qasm &> molsq_log/225QBT_35CYC_QSE_0105.out
+# srun --mem=50G python3 -u run_mlqls.py --dt grid --d 15 --qf ../QUEKO-benchmark/large/225QBT_40CYC_0105.qasm &> molsq_log/225QBT_40CYC_QSE_0105.out
+# srun --mem=50G python3 -u run_mlqls.py --dt grid --d 15 --qf ../QUEKO-benchmark/large/225QBT_45CYC_0105.qasm &> molsq_log/225QBT_45CYC_QSE_0105.out
+
+srun --mem=50G python3 -u run_mlqls.py --dt grid --d 25 --qf ../QUEKO-benchmark/large/625QBT_5CYC_0105.qasm &> molsq_log/625QBT_5CYC_QSE_0105.out
+srun --mem=50G python3 -u run_mlqls.py --dt grid --d 25 --qf ../QUEKO-benchmark/large/625QBT_10CYC_0105.qasm &> molsq_log/625QBT_10CYC_QSE_0105.out
+srun --mem=50G python3 -u run_mlqls.py --dt grid --d 25 --qf ../QUEKO-benchmark/large/625QBT_15CYC_0105.qasm &> molsq_log/625QBT_15CYC_QSE_0105.out
+srun --mem=50G python3 -u run_mlqls.py --dt grid --d 25 --qf ../QUEKO-benchmark/large/625QBT_20CYC_0105.qasm &> molsq_log/625QBT_20CYC_QSE_0105.out
+srun --mem=50G python3 -u run_mlqls.py --dt grid --d 25 --qf ../QUEKO-benchmark/large/625QBT_25CYC_0105.qasm &> molsq_log/625QBT_25CYC_QSE_0105.out
+srun --mem=50G python3 -u run_mlqls.py --dt grid --d 25 --qf ../QUEKO-benchmark/large/625QBT_30CYC_0105.qasm &> molsq_log/625QBT_30CYC_QSE_0105.out
+srun --mem=50G python3 -u run_mlqls.py --dt grid --d 25 --qf ../QUEKO-benchmark/large/625QBT_35CYC_0105.qasm &> molsq_log/625QBT_35CYC_QSE_0105.out
+srun --mem=50G python3 -u run_mlqls.py --dt grid --d 25 --qf ../QUEKO-benchmark/large/625QBT_40CYC_0105.qasm &> molsq_log/625QBT_40CYC_QSE_0105.out
+srun --mem=50G python3 -u run_mlqls.py --dt grid --d 25 --qf ../QUEKO-benchmark/large/625QBT_45CYC_0105.qasm &> molsq_log/625QBT_45CYC_QSE_0105.out

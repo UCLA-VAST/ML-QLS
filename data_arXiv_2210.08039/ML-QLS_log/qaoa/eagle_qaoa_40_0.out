@@ -1,0 +1,179 @@
+srun: job 21021 queued and waiting for resources
+srun: job 21021 has been allocated resources
+===============================================
+====      Stage 0: Heuristic Algorithm     ====
+===============================================
+[INFO] get a solution with 67 SWAP and depth 20[INFO] get a solution for reverse circuit with 82 SWAP and depth 21[INFO] get a solution with 71 SWAP and depth 20[INFO] get a solution for reverse circuit with 74 SWAP and depth 20[INFO] Update circuit by forwardCir with 67 SWAP and depth 20[INFO] get a solution with 68 SWAP and depth 21[INFO] get a solution for reverse circuit with 68 SWAP and depth 19[INFO] get a solution with 64 SWAP and depth 20[INFO] get a solution for reverse circuit with 64 SWAP and depth 20[INFO] get a solution with 63 SWAP and depth 20[INFO] get a solution for reverse circuit with 74 SWAP and depth 26[INFO] get a solution with 67 SWAP and depth 20[INFO] get a solution for reverse circuit with 71 SWAP and depth 25[INFO] Update circuit by forwardCir with 63 SWAP and depth 20[INFO] get a solution with 67 SWAP and depth 19[INFO] get a solution for reverse circuit with 72 SWAP and depth 23[INFO] get a solution with 69 SWAP and depth 21[INFO] get a solution for reverse circuit with 77 SWAP and depth 23[INFO] Update circuit by forwardCir with 67 SWAP and depth 19[INFO] get a solution with 66 SWAP and depth 17[INFO] get a solution for reverse circuit with 72 SWAP and depth 27[INFO] get a solution with 74 SWAP and depth 22[INFO] get a solution for reverse circuit with 65 SWAP and depth 19[INFO] get a solution with 72 SWAP and depth 20[INFO] get a solution for reverse circuit with 78 SWAP and depth 25[INFO] Update circuit by reverseCir with 65 SWAP and depth 19[INFO] Update circuit by reverseCir
+[INFO] ASAP Scheduling: Start                                               
+[INFO] ASAP Scheduling: Finish                                               
+[INFO] get a solution with 68 SWAP and depth 28[INFO] get a solution for reverse circuit with 73 SWAP and depth 21[INFO] get a solution with 67 SWAP and depth 18[INFO] get a solution for reverse circuit with 71 SWAP and depth 24[INFO] get a solution with 66 SWAP and depth 29[INFO] get a solution for reverse circuit with 65 SWAP and depth 25[INFO] get a solution with 63 SWAP and depth 15[INFO] get a solution for reverse circuit with 61 SWAP and depth 16[INFO] get a solution with 65 SWAP and depth 24[INFO] get a solution for reverse circuit with 69 SWAP and depth 22[INFO] Update circuit by reverseCir with 61 SWAP and depth 16[INFO] Update circuit by reverseCir
+[INFO] ASAP Scheduling: Start                                               
+[INFO] ASAP Scheduling: Finish                                               
+[INFO] get a solution with 67 SWAP and depth 19[INFO] get a solution for reverse circuit with 72 SWAP and depth 19[INFO] get a solution with 66 SWAP and depth 16[INFO] get a solution for reverse circuit with 65 SWAP and depth 18[INFO] get a solution with 70 SWAP and depth 16[INFO] get a solution for reverse circuit with 72 SWAP and depth 17[INFO] Update circuit by reverseCir with 65 SWAP and depth 18[INFO] Update circuit by reverseCir
+[INFO] ASAP Scheduling: Start                                               
+[INFO] ASAP Scheduling: Finish                                               
+[INFO] get a solution with 67 SWAP and depth 18[INFO] get a solution for reverse circuit with 79 SWAP and depth 23[INFO] get a solution with 71 SWAP and depth 18[INFO] get a solution for reverse circuit with 64 SWAP and depth 16[INFO] get a solution with 71 SWAP and depth 24[INFO] get a solution for reverse circuit with 73 SWAP and depth 21[INFO] Update circuit by reverseCir with 64 SWAP and depth 16[INFO] Update circuit by reverseCir
+[INFO] ASAP Scheduling: Start                                               
+[INFO] ASAP Scheduling: Finish                                               
+[INFO] get a solution with 61 SWAP
+===============================================
+====            Verify Result              ====
+===============================================
+PASS!!!
+[INFO] get a solution with 61 SWAP and depth 16
+---------- Heuristic algorithm compilation time total  time usage -----------
+Real: 66.411908s; User: 65.854508s; System: 0.489951s
+
+===============================================
+====     V Cycle 1: Non-SMT Refinement     ====
+===============================================
+===============================================
+====          Stage 1: Clutsering          ====
+===============================================
+[Info] 1 Levels in V Cycle
+===============================================
+====   Stage 2: Coarsest level solving     ====
+===============================================
+[Info] OLSQ2 Layout Synthesis                        
+[Info] OLSQ2 Layout Synthesis                        
+[Info] Iter 0: Solving with depth range (1, 2)            
+[Info] Iter 0: Generating formulation                        
+[Info]          constructing variables                       
+[Info]          constructing injective mapping constraint    
+[Info]          constructing dependency constraint           
+[Info]          constructing valid two-qubit gate constraint 
+[Info]          constructing swap overlapping constraint     
+[Info]          constructing mapping transformation constraint
+[Info] Iter 0: Optimizing model                             
+[Info]          trying to optimize for depth bound 1            
+[Info]          optimization results: fail                         
+---------- optimizing depth     period time usage -----------
+Real: 0.195929s; User: 0.159875s; System: 0.035996s
+
+---------- optimizing depth     total  time usage -----------
+Real: 0.200343s; User: 0.164284s; System: 0.036000s
+
+[Info] Iter 1: Solving with depth range (2, 4)            
+[Info] Iter 1: Generating formulation                        
+[Info]          constructing variables                       
+[Info]          constructing injective mapping constraint    
+[Info]          constructing dependency constraint           
+[Info]          constructing valid two-qubit gate constraint 
+[Info]          constructing swap overlapping constraint     
+[Info]          constructing mapping transformation constraint
+[Info] Iter 1: Optimizing model                             
+[Info]          trying to optimize for depth bound 2            
+[Info]          optimization results: success                         
+---------- optimizing depth     period time usage -----------
+Real: 0.409110s; User: 0.365101s; System: 0.044010s
+
+---------- optimizing depth     total  time usage -----------
+Real: 0.638771s; User: 0.542690s; System: 0.096022s
+
+[Info]          trying to optimize for swap bound 2            
+[Info]          optimization results: success                         
+---------- optimizing swap      period time usage -----------
+Real: 3.196039s; User: 3.196016s; System: 0.000002s
+
+---------- optimizing swap      total  time usage -----------
+Real: 3.835257s; User: 3.739154s; System: 0.096024s
+
+[Info]          trying to optimize for swap bound 0            
+[Info]          optimization results: fail                         
+---------- optimizing swap      period time usage -----------
+Real: 0.092512s; User: 0.092512s; System: 0.000000s
+
+---------- optimizing swap      total  time usage -----------
+Real: 3.928777s; User: 3.832675s; System: 0.096024s
+
+[Info] Successfully reduce SWAP count. Go to next run.            
+[Info] Solving with depth 4            
+[Info] Generating formulation                        
+[Info]          constructing variables                       
+[Info]          constructing injective mapping constraint    
+[Info]          constructing dependency constraint           
+[Info]          constructing valid two-qubit gate constraint 
+[Info]          constructing swap overlapping constraint     
+[Info]          constructing mapping transformation constraint
+[Info]          trying to optimize for swap bound 0            
+[Info]          optimization results: fail                         
+---------- optimizing swap      period time usage -----------
+Real: 2.123384s; User: 2.055345s; System: 0.067990s
+
+---------- optimizing swap      total  time usage -----------
+Real: 6.097153s; User: 5.917024s; System: 0.180002s
+
+[Info] OLSQ2 Layout Synthesis                        
+[Info] OLSQ2 Layout Synthesis                        
+[Info] Iter 0: Solving with depth range (1, 2)            
+[Info] Iter 0: Generating formulation                        
+[Info]          constructing variables                       
+[Info]          constructing injective mapping constraint    
+[Info]          constructing dependency constraint           
+[Info]          constructing valid two-qubit gate constraint 
+[Info]          constructing swap overlapping constraint     
+[Info]          constructing mapping transformation constraint
+[Info] Iter 0: Optimizing model                             
+[Info]          trying to optimize for depth bound 1            
+[Info]          optimization results: fail                         
+---------- optimizing depth     period time usage -----------
+Real: 0.519983s; User: 0.424010s; System: 0.095966s
+
+---------- optimizing depth     total  time usage -----------
+Real: 0.536164s; User: 0.440191s; System: 0.095966s
+
+[Info] Iter 1: Solving with depth range (2, 4)            
+[Info] Iter 1: Generating formulation                        
+[Info]          constructing variables                       
+[Info]          constructing injective mapping constraint    
+[Info]          constructing dependency constraint           
+[Info]          constructing valid two-qubit gate constraint 
+[Info]          constructing swap overlapping constraint     
+[Info]          constructing mapping transformation constraint
+[Info] Iter 1: Optimizing model                             
+[Info]          trying to optimize for depth bound 2            
+[Info]          optimization results: fail                         
+---------- optimizing depth     period time usage -----------
+Real: 13.810290s; User: 13.750145s; System: 0.060015s
+
+---------- optimizing depth     total  time usage -----------
+Real: 14.416999s; User: 14.244862s; System: 0.171999s
+
+[Info]          constructing injective mapping constraint    
+[Info]          constructing valid two-qubit gate constraint 
+[Info]          constructing swap overlapping constraint     
+[Info]          constructing mapping transformation constraint
+[Info]          trying to optimize for depth bound 3            
+[Info]          optimization results: fail                         
+---------- optimizing depth     period time usage -----------
+Real: 600.000135s; User: 598.585597s; System: 1.404009s
+
+---------- optimizing depth     total  time usage -----------
+Real: 614.437330s; User: 612.850654s; System: 1.576008s
+
+[INFO] get a solution with 20 SWAP and depth 21[INFO] get a solution for reverse circuit with 17 SWAP and depth 19[INFO] get a solution with 16 SWAP and depth 14[INFO] get a solution for reverse circuit with 17 SWAP and depth 18[INFO] get a solution with 18 SWAP and depth 16[INFO] get a solution for reverse circuit with 14 SWAP and depth 14[INFO] get a solution with 15 SWAP and depth 21[INFO] get a solution for reverse circuit with 15 SWAP and depth 15[INFO] Update circuit by reverseCir with 14 SWAP and depth 14[INFO] Update circuit by reverseCir
+[INFO] ASAP Scheduling: Start                                               
+[INFO] ASAP Scheduling: Finish                                               
+===============================================
+====         Stage 3: Refinement           ====
+===============================================
+[INFO] Refine the finest-level problem
+[INFO] get a solution with 70 SWAP and depth 23[INFO] get a solution for reverse circuit with 73 SWAP and depth 22[INFO] get a solution with 69 SWAP and depth 19[INFO] get a solution for reverse circuit with 67 SWAP and depth 18[INFO] get a solution with 77 SWAP and depth 22[INFO] get a solution for reverse circuit with 73 SWAP and depth 27[INFO] Update circuit by reverseCir with 67 SWAP and depth 18[INFO] Update circuit by reverseCir
+[INFO] ASAP Scheduling: Start                                               
+[INFO] ASAP Scheduling: Finish                                               
+[INFO] get a solution with 67 SWAP and depth 18[INFO] get a solution with 73 SWAP and depth 19[INFO] get a solution for reverse circuit with 85 SWAP and depth 21[INFO] get a solution with 79 SWAP and depth 19[INFO] get a solution for reverse circuit with 81 SWAP and depth 22[INFO] Update circuit by forwardCir with 73 SWAP and depth 19[INFO] get a solution with 69 SWAP and depth 25[INFO] get a solution for reverse circuit with 75 SWAP and depth 27[INFO] get a solution with 76 SWAP and depth 21[INFO] get a solution for reverse circuit with 74 SWAP and depth 24[INFO] Update circuit by forwardCir with 69 SWAP and depth 25[INFO] get a solution with 74 SWAP and depth 28[INFO] get a solution for reverse circuit with 88 SWAP and depth 22[INFO] get a solution with 85 SWAP and depth 25[INFO] get a solution for reverse circuit with 80 SWAP and depth 19[INFO] Update circuit by forwardCir with 74 SWAP and depth 28[INFO] get a solution with 85 SWAP and depth 22[INFO] get a solution for reverse circuit with 88 SWAP and depth 32[INFO] get a solution with 87 SWAP and depth 20[INFO] get a solution for reverse circuit with 85 SWAP and depth 18[INFO] get a solution with 88 SWAP and depth 22[INFO] get a solution for reverse circuit with 77 SWAP and depth 19[INFO] get a solution with 82 SWAP and depth 26[INFO] get a solution for reverse circuit with 80 SWAP and depth 30[INFO] Update circuit by reverseCir with 77 SWAP and depth 19[INFO] Update circuit by reverseCir
+[INFO] ASAP Scheduling: Start                                               
+[INFO] ASAP Scheduling: Finish                                               
+[INFO] get a solution with 77 SWAP and depth 23[INFO] get a solution for reverse circuit with 82 SWAP and depth 21[INFO] get a solution with 80 SWAP and depth 30[INFO] get a solution for reverse circuit with 74 SWAP and depth 22[INFO] get a solution with 70 SWAP and depth 21[INFO] get a solution for reverse circuit with 74 SWAP and depth 20[INFO] get a solution with 76 SWAP and depth 26[INFO] get a solution for reverse circuit with 76 SWAP and depth 18[INFO] Update circuit by forwardCir with 70 SWAP and depth 21[INFO] get a solution with 77 SWAP and depth 23[INFO] get a solution for reverse circuit with 84 SWAP and depth 30[INFO] get a solution with 80 SWAP and depth 25[INFO] get a solution for reverse circuit with 71 SWAP and depth 21[INFO] get a solution with 83 SWAP and depth 23[INFO] get a solution for reverse circuit with 83 SWAP and depth 28[INFO] Update circuit by reverseCir with 71 SWAP and depth 21[INFO] Update circuit by reverseCir
+[INFO] ASAP Scheduling: Start                                               
+[INFO] ASAP Scheduling: Finish                                               
+[INFO] ASAP Scheduling: Start                                               
+[INFO] ASAP Scheduling: Finish                                               
+===============================================
+====            Verify Result              ====
+===============================================
+PASS!!!
+[INFO] get a solution with 67 SWAP and depth 18
+---------- Non-SMT refinement compilation time total  time usage -----------
+Real: 751.457017s; User: 747.343792s; System: 2.941993s
+

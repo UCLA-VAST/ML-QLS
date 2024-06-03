@@ -1,0 +1,536 @@
+srun: job 25049 queued and waiting for resources
+srun: job 25049 has been allocated resources
+===============================================
+====      Stage 0: Heuristic Algorithm     ====
+===============================================
+[INFO] get a solution with 2328 SWAP and depth 659[INFO] get a solution for reverse circuit with 2293 SWAP and depth 536[INFO] get a solution with 2182 SWAP and depth 523[INFO] get a solution for reverse circuit with 1994 SWAP and depth 282[INFO] get a solution with 1855 SWAP and depth 396[INFO] get a solution for reverse circuit with 1773 SWAP and depth 414[INFO] get a solution with 1827 SWAP and depth 372[INFO] get a solution for reverse circuit with 1747 SWAP and depth 273[INFO] get a solution with 1752 SWAP and depth 346[INFO] get a solution for reverse circuit with 1764 SWAP and depth 383[INFO] Update circuit by reverseCir with 1747 SWAP and depth 273[INFO] Update circuit by reverseCir
+[INFO] ASAP Scheduling: Start                                               
+[INFO] ASAP Scheduling: Finish                                               
+[INFO] get a solution with 3048 SWAP and depth 733[INFO] get a solution for reverse circuit with 2770 SWAP and depth 585[INFO] get a solution with 2497 SWAP and depth 460[INFO] get a solution for reverse circuit with 2243 SWAP and depth 448[INFO] get a solution with 2240 SWAP and depth 519[INFO] get a solution for reverse circuit with 2019 SWAP and depth 369[INFO] get a solution with 1951 SWAP and depth 395[INFO] get a solution for reverse circuit with 1950 SWAP and depth 498[INFO] get a solution with 1959 SWAP and depth 350[INFO] get a solution for reverse circuit with 1890 SWAP and depth 324[INFO] get a solution with 1859 SWAP and depth 453[INFO] get a solution for reverse circuit with 1973 SWAP and depth 468[INFO] get a solution with 1866 SWAP and depth 392[INFO] get a solution for reverse circuit with 1883 SWAP and depth 388[INFO] Update circuit by forwardCir with 1859 SWAP and depth 453[INFO] get a solution with 3604 SWAP and depth 935[INFO] get a solution for reverse circuit with 2974 SWAP and depth 571[INFO] get a solution with 2509 SWAP and depth 604[INFO] get a solution for reverse circuit with 2346 SWAP and depth 487[INFO] get a solution with 2175 SWAP and depth 507[INFO] get a solution for reverse circuit with 2063 SWAP and depth 477[INFO] get a solution with 1987 SWAP and depth 415[INFO] get a solution for reverse circuit with 1965 SWAP and depth 393[INFO] get a solution with 1819 SWAP and depth 377[INFO] get a solution for reverse circuit with 1889 SWAP and depth 437[INFO] get a solution with 1871 SWAP and depth 397[INFO] get a solution for reverse circuit with 1853 SWAP and depth 348[INFO] Update circuit by forwardCir with 1819 SWAP and depth 377[INFO] get a solution with 3151 SWAP and depth 844[INFO] get a solution for reverse circuit with 2829 SWAP and depth 604[INFO] get a solution with 2578 SWAP and depth 530[INFO] get a solution for reverse circuit with 2173 SWAP and depth 425[INFO] get a solution with 1849 SWAP and depth 420[INFO] get a solution for reverse circuit with 1768 SWAP and depth 383[INFO] get a solution with 1683 SWAP and depth 375[INFO] get a solution for reverse circuit with 1746 SWAP and depth 337[INFO] get a solution with 1677 SWAP and depth 420[INFO] get a solution for reverse circuit with 1670 SWAP and depth 445[INFO] get a solution with 1590 SWAP and depth 330[INFO] get a solution for reverse circuit with 1602 SWAP and depth 277[INFO] get a solution with 1588 SWAP and depth 331[INFO] get a solution for reverse circuit with 1618 SWAP and depth 335[INFO] get a solution with 1588 SWAP and depth 367[INFO] get a solution for reverse circuit with 1465 SWAP and depth 272[INFO] get a solution with 1384 SWAP and depth 220[INFO] get a solution for reverse circuit with 1472 SWAP and depth 305[INFO] get a solution with 1424 SWAP and depth 280[INFO] get a solution for reverse circuit with 1427 SWAP and depth 337[INFO] Update circuit by forwardCir with 1384 SWAP and depth 220[INFO] get a solution with 1384 SWAP
+===============================================
+====            Verify Result              ====
+===============================================
+PASS!!!
+[INFO] get a solution with 1384 SWAP and depth 220
+---------- Heuristic algorithm compilation time total  time usage -----------
+Real: 8154.163686s; User: 8121.682606s; System: 31.862281s
+
+===============================================
+====     V Cycle 1: Non-SMT Refinement     ====
+===============================================
+===============================================
+====          Stage 1: Clutsering          ====
+===============================================
+[Info] 3 Levels in V Cycle
+===============================================
+====   Stage 2: Coarsest level solving     ====
+===============================================
+[Info] OLSQ2 Layout Synthesis                        
+[Info] Constructing dependency                        
+[Info] OLSQ2 Layout Synthesis                        
+[Info] Iter 0: Solving with depth range (1, 2)            
+[Info] Iter 0: Generating formulation                        
+[Info]          constructing variables                       
+[Info]          constructing injective mapping constraint    
+[Info]          constructing dependency constraint           
+[Info]          constructing valid two-qubit gate constraint 
+[Info]          constructing swap overlapping constraint     
+[Info]          constructing mapping transformation constraint
+[Info] Iter 0: Optimizing model                             
+[Info]          trying to optimize for depth bound 1            
+[Info]          optimization results: fail                         
+---------- optimizing depth     period time usage -----------
+Real: 0.082882s; User: 0.082881s; System: 0.000003s
+
+---------- optimizing depth     total  time usage -----------
+Real: 0.090746s; User: 0.090743s; System: 0.000003s
+
+[Info] Iter 1: Solving with depth range (2, 4)            
+[Info] Iter 1: Generating formulation                        
+[Info]          constructing variables                       
+[Info]          constructing injective mapping constraint    
+[Info]          constructing dependency constraint           
+[Info]          constructing valid two-qubit gate constraint 
+[Info]          constructing swap overlapping constraint     
+[Info]          constructing mapping transformation constraint
+[Info] Iter 1: Optimizing model                             
+[Info]          trying to optimize for depth bound 2            
+[Info]          optimization results: fail                         
+---------- optimizing depth     period time usage -----------
+Real: 0.227473s; User: 0.215405s; System: 0.011997s
+
+---------- optimizing depth     total  time usage -----------
+Real: 0.340704s; User: 0.328630s; System: 0.012000s
+
+[Info]          constructing injective mapping constraint    
+[Info]          constructing valid two-qubit gate constraint 
+[Info]          constructing swap overlapping constraint     
+[Info]          constructing mapping transformation constraint
+[Info]          trying to optimize for depth bound 3            
+[Info]          optimization results: fail                         
+---------- optimizing depth     period time usage -----------
+Real: 0.167450s; User: 0.163449s; System: 0.003998s
+
+---------- optimizing depth     total  time usage -----------
+Real: 0.516069s; User: 0.499991s; System: 0.015998s
+
+[Info] Iter 2: Solving with depth range (4, 8)            
+[Info] Iter 2: Generating formulation                        
+[Info]          constructing variables                       
+[Info]          constructing injective mapping constraint    
+[Info]          constructing dependency constraint           
+[Info]          constructing valid two-qubit gate constraint 
+[Info]          constructing swap overlapping constraint     
+[Info]          constructing mapping transformation constraint
+[Info] Iter 2: Optimizing model                             
+[Info]          trying to optimize for depth bound 4            
+[Info]          optimization results: fail                         
+---------- optimizing depth     period time usage -----------
+Real: 0.718270s; User: 0.702203s; System: 0.016002s
+
+---------- optimizing depth     total  time usage -----------
+Real: 1.289182s; User: 1.257017s; System: 0.032001s
+
+[Info]          constructing injective mapping constraint    
+[Info]          constructing valid two-qubit gate constraint 
+[Info]          constructing swap overlapping constraint     
+[Info]          constructing mapping transformation constraint
+[Info]          trying to optimize for depth bound 5            
+[Info]          optimization results: fail                         
+---------- optimizing depth     period time usage -----------
+Real: 0.455214s; User: 0.447215s; System: 0.007999s
+
+---------- optimizing depth     total  time usage -----------
+Real: 1.752987s; User: 1.712822s; System: 0.040000s
+
+[Info]          constructing injective mapping constraint    
+[Info]          constructing valid two-qubit gate constraint 
+[Info]          constructing swap overlapping constraint     
+[Info]          constructing mapping transformation constraint
+[Info]          trying to optimize for depth bound 6            
+[Info]          optimization results: fail                         
+---------- optimizing depth     period time usage -----------
+Real: 0.143532s; User: 0.143533s; System: 0.000000s
+
+---------- optimizing depth     total  time usage -----------
+Real: 1.906257s; User: 1.866092s; System: 0.040000s
+
+[Info]          constructing injective mapping constraint    
+[Info]          constructing valid two-qubit gate constraint 
+[Info]          constructing swap overlapping constraint     
+[Info]          constructing mapping transformation constraint
+[Info]          trying to optimize for depth bound 7            
+[Info]          optimization results: fail                         
+---------- optimizing depth     period time usage -----------
+Real: 0.161395s; User: 0.161397s; System: 0.000000s
+
+---------- optimizing depth     total  time usage -----------
+Real: 2.076454s; User: 2.036289s; System: 0.040000s
+
+[Info] Iter 3: Solving with depth range (8, 16)            
+[Info] Iter 3: Generating formulation                        
+[Info]          constructing variables                       
+[Info]          constructing injective mapping constraint    
+[Info]          constructing dependency constraint           
+[Info]          constructing valid two-qubit gate constraint 
+[Info]          constructing swap overlapping constraint     
+[Info]          constructing mapping transformation constraint
+[Info] Iter 3: Optimizing model                             
+[Info]          trying to optimize for depth bound 8            
+[Info]          optimization results: fail                         
+---------- optimizing depth     period time usage -----------
+Real: 2.531343s; User: 2.503192s; System: 0.027999s
+
+---------- optimizing depth     total  time usage -----------
+Real: 4.738458s; User: 4.670061s; System: 0.067999s
+
+[Info]          constructing injective mapping constraint    
+[Info]          constructing valid two-qubit gate constraint 
+[Info]          constructing swap overlapping constraint     
+[Info]          constructing mapping transformation constraint
+[Info]          trying to optimize for depth bound 9            
+[Info]          optimization results: fail                         
+---------- optimizing depth     period time usage -----------
+Real: 1.016624s; User: 1.016507s; System: 0.000000s
+
+---------- optimizing depth     total  time usage -----------
+Real: 5.763895s; User: 5.695378s; System: 0.067999s
+
+[Info]          constructing injective mapping constraint    
+[Info]          constructing valid two-qubit gate constraint 
+[Info]          constructing swap overlapping constraint     
+[Info]          constructing mapping transformation constraint
+[Info]          trying to optimize for depth bound 10            
+[Info]          optimization results: fail                         
+---------- optimizing depth     period time usage -----------
+Real: 0.281502s; User: 0.277517s; System: 0.003987s
+
+---------- optimizing depth     total  time usage -----------
+Real: 6.054232s; User: 5.981728s; System: 0.071987s
+
+[Info]          constructing injective mapping constraint    
+[Info]          constructing valid two-qubit gate constraint 
+[Info]          constructing swap overlapping constraint     
+[Info]          constructing mapping transformation constraint
+[Info]          trying to optimize for depth bound 11            
+[Info]          optimization results: fail                         
+---------- optimizing depth     period time usage -----------
+Real: 0.080307s; User: 0.080303s; System: 0.000005s
+
+---------- optimizing depth     total  time usage -----------
+Real: 6.142461s; User: 6.069951s; System: 0.071992s
+
+[Info]          constructing injective mapping constraint    
+[Info]          constructing valid two-qubit gate constraint 
+[Info]          constructing swap overlapping constraint     
+[Info]          constructing mapping transformation constraint
+[Info]          trying to optimize for depth bound 12            
+[Info]          optimization results: fail                         
+---------- optimizing depth     period time usage -----------
+Real: 0.064465s; User: 0.064385s; System: 0.000000s
+
+---------- optimizing depth     total  time usage -----------
+Real: 6.213903s; User: 6.141304s; System: 0.071999s
+
+[Info]          constructing injective mapping constraint    
+[Info]          constructing valid two-qubit gate constraint 
+[Info]          constructing swap overlapping constraint     
+[Info]          constructing mapping transformation constraint
+[Info]          trying to optimize for depth bound 13            
+[Info]          optimization results: fail                         
+---------- optimizing depth     period time usage -----------
+Real: 0.139200s; User: 0.139200s; System: 0.000000s
+
+---------- optimizing depth     total  time usage -----------
+Real: 6.360502s; User: 6.287902s; System: 0.071999s
+
+[Info]          constructing injective mapping constraint    
+[Info]          constructing valid two-qubit gate constraint 
+[Info]          constructing swap overlapping constraint     
+[Info]          constructing mapping transformation constraint
+[Info]          trying to optimize for depth bound 14            
+[Info]          optimization results: fail                         
+---------- optimizing depth     period time usage -----------
+Real: 0.497253s; User: 0.493253s; System: 0.004000s
+
+---------- optimizing depth     total  time usage -----------
+Real: 6.864999s; User: 6.788400s; System: 0.075999s
+
+[Info]          constructing injective mapping constraint    
+[Info]          constructing valid two-qubit gate constraint 
+[Info]          constructing swap overlapping constraint     
+[Info]          constructing mapping transformation constraint
+[Info]          trying to optimize for depth bound 15            
+[Info]          optimization results: fail                         
+---------- optimizing depth     period time usage -----------
+Real: 0.306134s; User: 0.306134s; System: 0.000000s
+
+---------- optimizing depth     total  time usage -----------
+Real: 7.179675s; User: 7.103075s; System: 0.075999s
+
+[Info] Iter 4: Solving with depth range (16, 32)            
+[Info] Iter 4: Generating formulation                        
+[Info]          constructing variables                       
+[Info]          constructing injective mapping constraint    
+[Info]          constructing dependency constraint           
+[Info]          constructing valid two-qubit gate constraint 
+[Info]          constructing swap overlapping constraint     
+[Info]          constructing mapping transformation constraint
+[Info] Iter 4: Optimizing model                             
+[Info]          trying to optimize for depth bound 16            
+[Info]          optimization results: fail                         
+---------- optimizing depth     period time usage -----------
+Real: 5.749299s; User: 5.684973s; System: 0.063996s
+
+---------- optimizing depth     total  time usage -----------
+Real: 13.154577s; User: 13.009584s; System: 0.143994s
+
+[Info]          constructing injective mapping constraint    
+[Info]          constructing valid two-qubit gate constraint 
+[Info]          constructing swap overlapping constraint     
+[Info]          constructing mapping transformation constraint
+[Info]          trying to optimize for depth bound 17            
+[Info]          optimization results: fail                         
+---------- optimizing depth     period time usage -----------
+Real: 2.596686s; User: 2.596473s; System: 0.000000s
+
+---------- optimizing depth     total  time usage -----------
+Real: 15.759600s; User: 15.614395s; System: 0.143994s
+
+[Info]          constructing injective mapping constraint    
+[Info]          constructing valid two-qubit gate constraint 
+[Info]          constructing swap overlapping constraint     
+[Info]          constructing mapping transformation constraint
+[Info]          trying to optimize for depth bound 18            
+[Info]          optimization results: fail                         
+---------- optimizing depth     period time usage -----------
+Real: 0.432304s; User: 0.432305s; System: 0.000001s
+
+---------- optimizing depth     total  time usage -----------
+Real: 16.200862s; User: 16.055656s; System: 0.143995s
+
+[Info]          constructing injective mapping constraint    
+[Info]          constructing valid two-qubit gate constraint 
+[Info]          constructing swap overlapping constraint     
+[Info]          constructing mapping transformation constraint
+[Info]          trying to optimize for depth bound 19            
+[Info]          optimization results: fail                         
+---------- optimizing depth     period time usage -----------
+Real: 0.090998s; User: 0.091000s; System: 0.000000s
+
+---------- optimizing depth     total  time usage -----------
+Real: 16.300967s; User: 16.155677s; System: 0.143995s
+
+[Info]          constructing injective mapping constraint    
+[Info]          constructing valid two-qubit gate constraint 
+[Info]          constructing swap overlapping constraint     
+[Info]          constructing mapping transformation constraint
+[Info]          trying to optimize for depth bound 20            
+[Info]          optimization results: fail                         
+---------- optimizing depth     period time usage -----------
+Real: 0.499161s; User: 0.495157s; System: 0.003993s
+
+---------- optimizing depth     total  time usage -----------
+Real: 16.807962s; User: 16.658668s; System: 0.147988s
+
+[Info]          constructing injective mapping constraint    
+[Info]          constructing valid two-qubit gate constraint 
+[Info]          constructing swap overlapping constraint     
+[Info]          constructing mapping transformation constraint
+[Info]          trying to optimize for depth bound 21            
+[Info]          optimization results: fail                         
+---------- optimizing depth     period time usage -----------
+Real: 1.273193s; User: 1.273093s; System: 0.000002s
+
+---------- optimizing depth     total  time usage -----------
+Real: 18.090081s; User: 17.940681s; System: 0.147994s
+
+[Info]          constructing injective mapping constraint    
+[Info]          constructing valid two-qubit gate constraint 
+[Info]          constructing swap overlapping constraint     
+[Info]          constructing mapping transformation constraint
+[Info]          trying to optimize for depth bound 22            
+[Info]          optimization results: fail                         
+---------- optimizing depth     period time usage -----------
+Real: 0.230038s; User: 0.229960s; System: 0.000000s
+
+---------- optimizing depth     total  time usage -----------
+Real: 18.330807s; User: 18.181327s; System: 0.147994s
+
+[Info]          constructing injective mapping constraint    
+[Info]          constructing valid two-qubit gate constraint 
+[Info]          constructing swap overlapping constraint     
+[Info]          constructing mapping transformation constraint
+[Info]          trying to optimize for depth bound 23            
+[Info]          optimization results: fail                         
+---------- optimizing depth     period time usage -----------
+Real: 0.705209s; User: 0.701186s; System: 0.003998s
+
+---------- optimizing depth     total  time usage -----------
+Real: 19.044100s; User: 18.890595s; System: 0.151992s
+
+[Info]          constructing injective mapping constraint    
+[Info]          constructing valid two-qubit gate constraint 
+[Info]          constructing swap overlapping constraint     
+[Info]          constructing mapping transformation constraint
+[Info]          trying to optimize for depth bound 24            
+[Info]          optimization results: fail                         
+---------- optimizing depth     period time usage -----------
+Real: 1.412407s; User: 1.412230s; System: 0.000001s
+
+---------- optimizing depth     total  time usage -----------
+Real: 20.465319s; User: 20.311637s; System: 0.151993s
+
+[Info]          constructing injective mapping constraint    
+[Info]          constructing valid two-qubit gate constraint 
+[Info]          constructing swap overlapping constraint     
+[Info]          constructing mapping transformation constraint
+[Info]          trying to optimize for depth bound 25            
+[Info]          optimization results: fail                         
+---------- optimizing depth     period time usage -----------
+Real: 0.682612s; User: 0.678606s; System: 0.003996s
+
+---------- optimizing depth     total  time usage -----------
+Real: 21.158513s; User: 21.000824s; System: 0.155989s
+
+[Info]          constructing injective mapping constraint    
+[Info]          constructing valid two-qubit gate constraint 
+[Info]          constructing swap overlapping constraint     
+[Info]          constructing mapping transformation constraint
+[Info]          trying to optimize for depth bound 26            
+[Info]          optimization results: fail                         
+---------- optimizing depth     period time usage -----------
+Real: 0.180234s; User: 0.180146s; System: 0.000000s
+
+---------- optimizing depth     total  time usage -----------
+Real: 21.347328s; User: 21.189550s; System: 0.155989s
+
+[Info]          constructing injective mapping constraint    
+[Info]          constructing valid two-qubit gate constraint 
+[Info]          constructing swap overlapping constraint     
+[Info]          constructing mapping transformation constraint
+[Info]          trying to optimize for depth bound 27            
+[Info]          optimization results: fail                         
+---------- optimizing depth     period time usage -----------
+Real: 1.255043s; User: 1.250977s; System: 0.004002s
+
+---------- optimizing depth     total  time usage -----------
+Real: 22.610287s; User: 22.448443s; System: 0.159991s
+
+[Info]          constructing injective mapping constraint    
+[Info]          constructing valid two-qubit gate constraint 
+[Info]          constructing swap overlapping constraint     
+[Info]          constructing mapping transformation constraint
+[Info]          trying to optimize for depth bound 28            
+[Info]          optimization results: fail                         
+---------- optimizing depth     period time usage -----------
+Real: 1.259640s; User: 1.259545s; System: 0.000000s
+
+---------- optimizing depth     total  time usage -----------
+Real: 23.878947s; User: 23.717006s; System: 0.159991s
+
+[Info]          constructing injective mapping constraint    
+[Info]          constructing valid two-qubit gate constraint 
+[Info]          constructing swap overlapping constraint     
+[Info]          constructing mapping transformation constraint
+[Info]          trying to optimize for depth bound 29            
+[Info]          optimization results: fail                         
+---------- optimizing depth     period time usage -----------
+Real: 18.887200s; User: 18.873711s; System: 0.011989s
+
+---------- optimizing depth     total  time usage -----------
+Real: 42.774713s; User: 42.599283s; System: 0.171980s
+
+[Info]          constructing injective mapping constraint    
+[Info]          constructing valid two-qubit gate constraint 
+[Info]          constructing swap overlapping constraint     
+[Info]          constructing mapping transformation constraint
+[Info]          trying to optimize for depth bound 30            
+[Info]          optimization results: fail                         
+---------- optimizing depth     period time usage -----------
+Real: 6.573562s; User: 6.568937s; System: 0.004007s
+
+---------- optimizing depth     total  time usage -----------
+Real: 49.365017s; User: 49.184956s; System: 0.175990s
+
+[Info]          constructing injective mapping constraint    
+[Info]          constructing valid two-qubit gate constraint 
+[Info]          constructing swap overlapping constraint     
+[Info]          constructing mapping transformation constraint
+[Info]          trying to optimize for depth bound 31            
+[Info]          optimization results: success                         
+---------- optimizing depth     period time usage -----------
+Real: 2.011665s; User: 2.011541s; System: 0.000000s
+
+---------- optimizing depth     total  time usage -----------
+Real: 51.384712s; User: 51.204528s; System: 0.175990s
+
+[Info]          trying to optimize for swap bound 55            
+[Info]          optimization results: success                         
+---------- optimizing swap      period time usage -----------
+Real: 1.460857s; User: 1.460776s; System: 0.000000s
+
+---------- optimizing swap      total  time usage -----------
+Real: 52.851415s; User: 52.671153s; System: 0.175990s
+
+[Info]          trying to optimize for swap bound 52            
+[Info]          optimization results: success                         
+---------- optimizing swap      period time usage -----------
+Real: 1.162005s; User: 1.161931s; System: 0.000000s
+
+---------- optimizing swap      total  time usage -----------
+Real: 54.048153s; User: 53.867819s; System: 0.175990s
+
+[Info]          trying to optimize for swap bound 50            
+[Info]          optimization results: success                         
+---------- optimizing swap      period time usage -----------
+Real: 1.799237s; User: 1.779118s; System: 0.019996s
+
+---------- optimizing swap      total  time usage -----------
+Real: 55.888287s; User: 55.687836s; System: 0.195986s
+
+[Info]          trying to optimize for swap bound 48            
+[Info]          optimization results: success                         
+---------- optimizing swap      period time usage -----------
+Real: 1.877736s; User: 1.869585s; System: 0.007994s
+
+---------- optimizing swap      total  time usage -----------
+Real: 57.807400s; User: 57.598801s; System: 0.203980s
+
+[Info]          trying to optimize for swap bound 47            
+[Info]          optimization results: success                         
+---------- optimizing swap      period time usage -----------
+Real: 7.960260s; User: 7.907716s; System: 0.051989s
+
+---------- optimizing swap      total  time usage -----------
+Real: 65.809725s; User: 65.548575s; System: 0.255977s
+
+[Info]          trying to optimize for swap bound 45            
+[Info]          optimization results: success                         
+---------- optimizing swap      period time usage -----------
+Real: 1.240032s; User: 1.235954s; System: 0.004000s
+
+---------- optimizing swap      total  time usage -----------
+Real: 67.081450s; User: 66.816216s; System: 0.259984s
+
+[Info]          trying to optimize for swap bound 41            
+[Info]          optimization results: success                         
+---------- optimizing swap      period time usage -----------
+Real: 32.259847s; User: 31.993483s; System: 0.263970s
+
+---------- optimizing swap      total  time usage -----------
+Real: 99.374552s; User: 98.842956s; System: 0.523954s
+
+[Info]          trying to optimize for swap bound 40            
+[Info]          optimization results: success                         
+---------- optimizing swap      period time usage -----------
+Real: 11.442289s; User: 11.325405s; System: 0.115997s
+
+---------- optimizing swap      total  time usage -----------
+Real: 110.846450s; User: 110.197966s; System: 0.639958s
+
+[Info]          trying to optimize for swap bound 39            
+[Info]          optimization results: fail                         
+---------- optimizing swap      period time usage -----------
+Real: 12.326673s; User: 12.240613s; System: 0.083977s
+
+---------- optimizing swap      total  time usage -----------
+Real: 123.218440s; User: 122.483895s; System: 0.723935s
+
+[Info] Successfully reduce SWAP count. Go to next run.            
+[Info] Solving with depth 33            
+[Info] Generating formulation                        
+[Info]          constructing variables                       
+[Info]          constructing injective mapping constraint    
+[Info]          constructing dependency constraint           
+[Info]          constructing valid two-qubit gate constraint 
+[Info]          constructing swap overlapping constraint     
+[Info]          constructing mapping transformation constraint
+[Info]          trying to optimize for swap bound 39            
+[Info]          optimization results: fail                         
+---------- optimizing swap      period time usage -----------
+Real: 100.000449s; User: 99.088276s; System: 0.899921s
+
+---------- optimizing swap      total  time usage -----------
+Real: 224.135225s; User: 222.476505s; System: 1.635857s
+
+===============================================
+====         Stage 3: Refinement           ====
+===============================================
+[INFO] Refine level-2,2 problem
+[INFO] get a solution with 9 SWAP and depth 202[INFO] get a solution for reverse circuit with 128 SWAP and depth 259[INFO] get a solution with 14 SWAP and depth 204[INFO] get a solution for reverse circuit with 111 SWAP and depth 242[INFO] Update circuit by forwardCir with 9 SWAP and depth 202[INFO] get a solution with 9 SWAP and depth 202[INFO] get a solution with 8 SWAP and depth 178[INFO] get a solution for reverse circuit with 108 SWAP and depth 240[INFO] get a solution with 12 SWAP and depth 223[INFO] get a solution for reverse circuit with 103 SWAP and depth 248[INFO] Update circuit by forwardCir with 8 SWAP and depth 178[INFO] get a solution with 9 SWAP and depth 164[INFO] get a solution for reverse circuit with 109 SWAP and depth 230[INFO] get a solution with 15 SWAP and depth 209[INFO] get a solution for reverse circuit with 105 SWAP and depth 223[INFO] Update circuit by forwardCir with 9 SWAP and depth 164[INFO] Refine level-1,1 problem
+[INFO] get a solution with 41 SWAP and depth 257[INFO] get a solution for reverse circuit with 326 SWAP and depth 336[INFO] get a solution with 52 SWAP and depth 222[INFO] get a solution for reverse circuit with 279 SWAP and depth 290[INFO] Update circuit by forwardCir with 41 SWAP and depth 257[INFO] get a solution with 41 SWAP and depth 257[INFO] get a solution with 30 SWAP and depth 201[INFO] get a solution for reverse circuit with 283 SWAP and depth 308[INFO] get a solution with 61 SWAP and depth 244[INFO] get a solution for reverse circuit with 278 SWAP and depth 289[INFO] Update circuit by forwardCir with 30 SWAP and depth 201[INFO] get a solution with 45 SWAP and depth 250[INFO] get a solution for reverse circuit with 284 SWAP and depth 308[INFO] get a solution with 50 SWAP and depth 244[INFO] get a solution for reverse circuit with 328 SWAP and depth 314[INFO] Update circuit by forwardCir with 45 SWAP and depth 250[INFO] Refine level-0,0 problem
+[INFO] get a solution with 170 SWAP and depth 280[INFO] get a solution for reverse circuit with 840 SWAP and depth 395[INFO] get a solution with 284 SWAP and depth 289[INFO] get a solution for reverse circuit with 918 SWAP and depth 397[INFO] Update circuit by forwardCir with 170 SWAP and depth 280[INFO] get a solution with 170 SWAP and depth 280[INFO] get a solution with 189 SWAP and depth 270[INFO] get a solution for reverse circuit with 849 SWAP and depth 363[INFO] get a solution with 268 SWAP and depth 328[INFO] get a solution for reverse circuit with 936 SWAP and depth 405[INFO] Update circuit by forwardCir with 189 SWAP and depth 270[INFO] get a solution with 224 SWAP and depth 225[INFO] get a solution for reverse circuit with 929 SWAP and depth 356[INFO] get a solution with 265 SWAP and depth 267[INFO] get a solution for reverse circuit with 845 SWAP and depth 382[INFO] Update circuit by forwardCir with 224 SWAP and depth 225[INFO] Refine the finest-level problem
+[INFO] get a solution with 967 SWAP and depth 240[INFO] get a solution for reverse circuit with 990 SWAP and depth 269[INFO] get a solution with 1001 SWAP and depth 224[INFO] get a solution for reverse circuit with 978 SWAP and depth 181[INFO] Update circuit by forwardCir with 967 SWAP and depth 240[INFO] get a solution with 967 SWAP and depth 240[INFO] get a solution with 1015 SWAP and depth 228[INFO] get a solution for reverse circuit with 986 SWAP and depth 208[INFO] get a solution with 1003 SWAP and depth 209[INFO] get a solution for reverse circuit with 863 SWAP and depth 187[INFO] get a solution with 881 SWAP and depth 160[INFO] get a solution for reverse circuit with 996 SWAP and depth 179[INFO] Update circuit by reverseCir with 863 SWAP and depth 187[INFO] Update circuit by reverseCir
+[INFO] ASAP Scheduling: Start                                               
+[INFO] ASAP Scheduling: Finish                                               
+[INFO] get a solution with 931 SWAP and depth 183[INFO] get a solution for reverse circuit with 959 SWAP and depth 198[INFO] get a solution with 867 SWAP and depth 127[INFO] get a solution for reverse circuit with 911 SWAP and depth 202[INFO] get a solution with 817 SWAP and depth 164[INFO] get a solution for reverse circuit with 828 SWAP and depth 156[INFO] get a solution with 893 SWAP and depth 213[INFO] get a solution for reverse circuit with 931 SWAP and depth 218[INFO] Update circuit by forwardCir with 817 SWAP and depth 164[INFO] ASAP Scheduling: Start                                               
+[INFO] ASAP Scheduling: Finish                                               
+===============================================
+====            Verify Result              ====
+===============================================
+PASS!!!
+[INFO] get a solution with 817 SWAP and depth 164
+---------- Non-SMT refinement compilation time total  time usage -----------
+Real: 9739.639642s; User: 9692.265545s; System: 46.633250s
+

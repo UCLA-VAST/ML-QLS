@@ -1,0 +1,10 @@
+
+#ifndef DSGLOBAL_HPP
+#define DSGLOBAL_HPP
+
+#include "misc/global.hpp"
+
+MOLSQ_NAMESPACE_HPP_START
+MOLSQ_NAMESPACE_HPP_END
+
+#endif // DSGLOBAL_HPP

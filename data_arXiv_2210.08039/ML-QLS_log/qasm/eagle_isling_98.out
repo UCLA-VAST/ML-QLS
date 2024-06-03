@@ -1,0 +1,26 @@
+===============================================
+====      Stage 0: Heuristic Algorithm     ====
+===============================================
+[Info] InitialMapper: Find initial mapping which allows most gate execution                        
+[Info] InitialMapper: Formulation generation                        
+[Info]          constructing variables                       
+[Info]          constructing injective mapping constraint    
+[Info] InitialMapper: Optimization                        
+[Info] Successfully-mapped gate count: 194, Unsuccessfully-mapped gate count: 0
+[Info] InitialMapper: Set circuit mapping (cost: 0.00) 
+[Info] InitialMapper: Map gates based on initial mapping
+[Info] InitialMapper: Finish
+[INFO] ASAP Scheduling: Start                                               
+[INFO] ASAP Scheduling: Finish                                               
+[INFO] get a solution with 0 SWAP
+===============================================
+====            Verify Result              ====
+===============================================
+PASS!!!
+[INFO] get a solution with 0 SWAP and depth 15
+---------- Heuristic algorithm compilation time total  time usage -----------
+Real: 336.704732s; User: 336.308761s; System: 0.332919s
+
+---------- Total compilation time total  time usage -----------
+Real: 336.704740s; User: 336.308770s; System: 0.332919s
+

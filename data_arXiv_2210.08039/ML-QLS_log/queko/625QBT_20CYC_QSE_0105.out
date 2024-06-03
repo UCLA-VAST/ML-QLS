@@ -1,0 +1,11 @@
+srun: job 25890 queued and waiting for resources
+srun: job 25890 has been allocated resources
+===============================================
+====      Stage 0: Heuristic Algorithm     ====
+===============================================
+srun: forcing job termination
+srun: forcing job termination
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: got SIGCONT
+slurmstepd-c02: error: *** STEP 25890.0 ON c02 CANCELLED AT 2024-04-18T13:56:56 ***
+[INFO] get a solution with 7281 SWAP and depth 845[INFO] get a solution for reverse circuit with 6521 SWAP and depth 732[INFO] get a solution with 5993 SWAP and depth 613[INFO] get a solution for reverse circuit with 5528 SWAP and depth 454[INFO] get a solution with 5123 SWAP and depth 472[INFO] get a solution for reverse circuit with 4886 SWAP and depth 378[INFO] get a solution with 4571 SWAP and depth 326[INFO] get a solution for reverse circuit with 4393 SWAP and depth 343[INFO] get a solution with 4274 SWAP and depth 384[INFO] get a solution for reverse circuit with 4171 SWAP and depth 360[INFO] get a solution with 4079 SWAP and depth 326srun: error: c02: task 0: Killed
