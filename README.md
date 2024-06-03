@@ -3,9 +3,9 @@
 ## Build and Installation Instructions
 
 ```
-# Clone mOLSQ repository
-git clone git@github.com:WanHsuanLin/mOLSQ.git
-cd mOLSQ
+# Clone ML-QLS repository
+git clone git@github.com:UCLA-VAST/ML-QLS.git
+cd ML-QLS
 
 # Build
 cmake . -Bbuild
@@ -14,14 +14,16 @@ make
 ```
 
 - Required Dependencies: 
-  - GMP: Please install GMP. You may need to compile it with `-fPIC` depending on your system.
-  - Bitwuzla (https://github.com/bitwuzla/bitwuzla/tree/4eda0536800576cb2531ab9ce13292da8f21f0eb): Please install Bitwuzla.
-  - pblib (https://github.com/master-keying/pblib): Please intall pblib in the `include/`. You may need to compile it with `-fPIC` depending on your system.
+  - [GMP](https://github.com/alisw/GMP/tree/master): Please install GMP. You may need to compile it with `-fPIC` depending on your system.
+  - [Bitwuzla](https://github.com/bitwuzla/bitwuzla/tree/4eda0536800576cb2531ab9ce13292da8f21f0eb): Please install Bitwuzla.
+  - [pblib](https://github.com/master-keying/pblib): Please install pblib in the `include/`. You may need to compile it with `-fPIC` depending on your system.
+  - [pybind11](https://pybind11.readthedocs.io/en/stable/)
+  - [Qiskit v1.1.0](https://docs.quantum.ibm.com/start): Please install Qiskit.
 
 ## Create a device from the Input Coupling Graph
 
 To perform QLS, we need to know the connections between the qubits, which is information about the physical device.
-We are going to use the `createDevice` function.
+We are going to use the `createDevice` function to return a C++ object for a QC device.
 
 ```
 from olsqPy import Device
@@ -30,48 +32,34 @@ device = createDevice(name="dev", nqubits=5, connection=[(0, 1), (1, 2), (1, 3),
 device.printDevice()
 ```
 
-We use a minimalist class `qcdevice` to store the properties of the device that we need, which can be constructed with these arguments.
-(The last three are only for fidelity optimization.)
-- `name`
-- `nqubits`: the number of physical qubits
-- `connection`: a list of physical qubit pairs corresponding to edges in the coupling graph
-- `swap_duration`: number of cycles a SWAP gate takes.
-   Usually it is either one, or three meaning three CX gates.
-- `fmeas`: a list of measurement fidelity
-- `fsingle`: a list of single-qubit gate fidelity
-- `ftwo`: a list of two-qubit gate fidelity, indices aligned with `connection`
+We also provide three functions `get_nnGrid`, `get_heavyHex`, and `get_device_by_name`, to construct coupling graphs by 1. grid length for grid-based architecture, 2. qubit number for heavy-hexagon-based archtecture,and 3. name, including qx, ourense, rochester, and eagle from IBM, Sycamore from Google, Aspen-4 from Rigetti.
+The function will return a list of qubit connections and a device stored in C++ object.
 
-If `name` starts with `"default_"`, a hard-coded device stored in `olsq/devices/` would be loaded.
-Other arguments can still be specified, in which case the original device properties would be replaced by the input.
+An example to use above functions:
 ```
-# use a hard-coded device in olsq/devices/ called ourense
-# which actually has the same properties as the device we constructed above
-lsqc_solver.setdevice( qcdevice("default_ourense") )
+from src.pyolsq.device import get_device_by_name, get_nnGrid, get_heavyHex
+
+# construct a 5-by-5 grid architecture
+grid_connection, grid_device = get_nnGrid(5)
+
+# construct eagle architecture
+eagle_connection, eagle_device = get_device_by_name("eagle")
 ```
 
 ## Create a Circuit from the Input Program
 
 Apart from the device, we need the quantum program/circuit to execute, which can be constructed with the `createCircuit` function.
-
-mOLSQ has an intermediate representation (IR) of quantum programs. (For details, refer to [a later part](#olsq-ir) of this tutorial.)
-In general, there are four ways to set the program: 
-1. Use OLSQ IR
-2. Use a string in QASM format
+The function inputs are the name and the qasm string of the circuit.
 ```
-from olsqPy import Circuit
 from src.pyolsq.apiPy import createCircuit
 circuit_name = "toffoli"
 circuit_str = "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[3];\nh q[2];\n" \
               "cx q[1], q[2];\ntdg q[2];\ncx q[0], q[2];\nt q[2];\n" \
               "cx q[1], q[2];\ntdg q[2];\ncx q[0], q[2];\nt q[1];\nt q[2];\n" \
               "cx q[0], q[1];\nh q[2];\nt q[0];\ntdg q[1];\ncx q[0], q[1];\n"
-
-# input the quantum program as a QASM string
-lsqc_solver.setprogram(circuit_str)
 circuit = createCircuit(circuit_name, circuit_str, is_qasm = true)
 circuit.printCircuit()
 ```
-
 
 ## Initialization and solve
 
@@ -90,40 +78,23 @@ lsqc_solver.run()
 
 There are two argument in the constructor of mOLSQ: `Circuit` and `Device`.
 The former one stands for the input circuit, and the later one stands for the input device.
-Idealy, the `run` method will return three solutions, `${circuit_name}_stage_0.qasm`, `${circuit_name}_stage_1.qasm`, and `${circuit_name}_stage_2.qasm`, from FastQLS (hueristic QLS algorithm), the first multilevel V cycle, and the second multilevel V cycle, respectively.
-
-## OLSQ IR
-
-OLSQ IR contains three things:
-1. `count_program_qubit`: the number of qubits in the program.
-2. `gates`: a list of tuples representing qubit(s) acted on by a gate, each tuple has one index if it is a single-qubit gate, two indices if it is a two-qubit gate.
-3. `gate_spec`: list of type/name of each gate, which is not important to OLSQ, and only needed when generating output.
-
-```
-# For the following circuit
-# q_0: ───────────────────■───
-#                         │  
-# q_1: ───────■───────────┼───
-#      ┌───┐┌─┴─┐┌─────┐┌─┴─┐
-# q_2: ┤ H ├┤ X ├┤ TDG ├┤ X ├─
-#      └───┘└───┘└─────┘└───┘ 
-
-# count_program_qubit = 3
-# gates = ((2,), (1,2), (2,), (0,1))
-# gate_spec = ("h", "cx", "tdg", "cx")
-```
+Idealy, the `run` method will return two solutions, `${circuit_name}_stage_0.qasm` and `${circuit_name}_stage_1.qasm` from sRefine (hueristic QLS algorithm) and the multilevel V cycle, respectively.
 
 ## Example: run_mlqls.py
 
-run_mlqls.py is an example program to use mOLSQ2 to perform layout synthesis. The output will be stored in under `result/`
+run_mlqls.py is an example program to use ML-QLS to perform layout synthesis. The solutions will be stored under `result/`
 ```
-# compile an qaoa circuit on a 5-by-5 grid quantum device
-python3 run_mlqls.py --dt grid --d 4 -qf benchmark/qaoa/qaoa_16_0.qasm
-# The output files (Final IR output file and the intermediate qasm file) of running the command are in example/.
+python3 run_mlqls.py --dt <device_type> --qf <circuit_file>
+```
+where `<circuit_file>` is the path to circuit qasm file, and `<device_type>` specifies the function used to construct devices. 
+We input the name if we want to construct a device by name and input `grid` if we want to constrcut a grid-based architecture using grid length. 
+For the second case, we use `--d <N>`, where `<N>` is the grid length, to specify the coupling graph.
+In addition, we use `--all_commute` to compile circuit with all commutable gates.
+For example, 
+```
+# compile a QUEKO circuit on a 8-by-8 grid quantum device
+python3 run_mlqls.py --dt grid --d 8 --qf benchmark/54QBT_05CYC_QSE_0.qasm
 
-# compile an qaoa circuit on sycamore quantum device
-python3 run_mlqls.py --dt sycamore --qf benchmark/qaoa/qaoa_16_0.qasm
+# compile a QUEKO circuit on sycamore quantum device
+python3 run_mlqls.py --dt sycamore --qf benchmark/54QBT_05CYC_QSE_0.qasm
 ```
-- `--dt $(str)`: Type of the quantum device: ourense, sycamore, rochester, tokyo, aspen-4, eagle, or grid. When using a grid architecure, add `--d $(int)` to specify the grid length.
-- `--d $(int)`: Grid length of the grid architecture
-- `--qf $(str)`: Input QASM file name

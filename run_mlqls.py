@@ -35,8 +35,6 @@ if __name__ == "__main__":
         help="Input file name")
     parser.add_argument("--all_commute", action='store_true', default=False,
         help="gates are all commmutable")
-    parser.add_argument("--sabre", action='store_true', default=False,
-        help="use sabre")
     
     # Read arguments from command line
     args = parser.parse_args()
@@ -52,11 +50,7 @@ if __name__ == "__main__":
     else:
         connection, device = get_device_by_name(args.device_type)
     
-    qubit_num, gate_list, _ = input_qasm(circuit_info)
-    if args.sabre:
-        run_sabre(gate_list, connection, device.nQubit())
-    else:
-        run_olsq_tbolsq(circuit, device, connection, args.all_commute)
+    run_olsq_tbolsq(circuit, device, connection, args.all_commute)
     # run_qmap(circuit_info, connection, device.nQubit())
 
     # circuit.printCircuitLayout()

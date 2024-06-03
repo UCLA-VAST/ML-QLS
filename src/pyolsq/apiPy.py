@@ -6,6 +6,9 @@
 from src.pyolsq.input import input_qasm
 # from src.pyolsq.run_h_compiler import run_sabre, test_sabre
 from olsqPy import Device, Circuit, mOLSQ, addGate, setEdge, setDependency, setInitialMapping
+import qiskit.qasm2
+import qiskit.circuit
+# from qiskit import transpile
 
 def createCircuit(name, program, is_qasm= True, gate_duration: dict = None):
     """Translate input program to Circuit
@@ -16,18 +19,22 @@ def createCircuit(name, program, is_qasm= True, gate_duration: dict = None):
             translated to mOLSQ IR; can be "benchmark" to use one of
             the benchmarks.  Default mode assumes qasm input.
     """
-    
-    if not is_qasm:
-        count_program_qubit = program[0]
-        list_gate_qubits = program[1]
-        list_gate_name = program[2]
-    else:
-        program = input_qasm(program)
-        count_program_qubit = program[0]
-        list_gate_qubits = program[1]
-        list_gate_name = program[2]
 
-    circuit = Circuit(name, program[0], len(program[1]))
+    list_gate_qubits = []
+    list_gate_name = []
+    circuit = qiskit.qasm2.loads(program)
+    # cz_circuit = transpile(circuit, basis_gates=['cz', 'rx', 'ry', 'rz', 'h', 't'])
+    n_qubit = circuit.num_qubits
+    instruction = circuit.data
+    for ins in instruction:
+        if ins.operation.num_qubits == 2:
+            list_gate_qubits.append([ins.qubits[0]._index, ins.qubits[1]._index])
+        else:
+            list_gate_qubits.append([ins.qubits[0]._index])
+        list_gate_name.append(ins.operation.name)
+
+
+    circuit = Circuit(name, n_qubit, len(program[1]))
     if gate_duration != None:
         for g, n in zip(list_gate_qubits, list_gate_name):
             addGate(circuit, n, g, gate_duration[n])
@@ -45,8 +52,6 @@ def createDevice(name: str, nqubits: int = None, connection: list = None, xy_coo
     """
     device = Device(name, nqubits, len(connection))
     setEdge(device, connection)
-    if xy_coordinate != None:
-        setXYCoord(device, xy_coordinate)
     return device
 
 
