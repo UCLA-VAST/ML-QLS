@@ -1,4 +1,4 @@
-# mOLSQ: Multilevel Quantum Layout Synthesis
+# ML-QLS: Multilevel Quantum Layout Synthesis
 
 ## Build and Installation Instructions
 
